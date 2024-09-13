@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Lexend Deca", sans-serif;
+
+  --size: 15px;
+
+  --primary-dark-blue: hsl(223, 47%, 7%);
+  --primary-blue: hsl(244, 38%, 16%);
+  --primary-violet: hsl(277, 64%, 61%);
+
+  --primary-white: hsl(0, 0%, 100%);
+  --secondary-white: hsla(0, 0%, 100%, 0.75);
+  --transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+  color: white;
+}
+
+.stats-preview-wrapper {
+  background: var(--primary-dark-blue);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.stats-preview-component {
+  width: 70%;
+  height: 450px;
+  background: var(--primary-blue);
+  display: flex;
+  border-radius: .6rem;
+  overflow: hidden;
+}
+
+.stats-preview-details {
+  width: 50%;
+  height: 100%;
+  padding: 4rem;
+}
+
+.stats-preview-details h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-family: var(--secondary-font);
+}
+
+.stats-preview-details p {
+  font-size: 1rem;
+  margin-bottom: 4rem;
+  padding-right: 1rem;
+  line-height: 1.8rem;
+  color: var(--transparent-white);
+}
+
+.stats-preview-details span {
+  color: var(--primary-violet);
+}
+
+.stats-preview-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.stats-preview-image {
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(
+      hsla(277, 89%, 25%, 0.603),
+      hsla(277, 89%, 25%, 0.603)
+    ),
+    url("images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.stats-preview-item h2{
+  font-size: 1.5rem;
+}
+
+.stats-preview-item p{
+  text-transform: uppercase;
+  font-size: var(--size);
+  color: var(--transparent-white);
+  letter-spacing: .1rem;
+}
+
+.attribution{
+  background: var(--primary-white);
+  color: var(--primary-dark-blue);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.attribution a{
+  text-decoration: none;
+  color: var(--primary-dark-blue);
+}
